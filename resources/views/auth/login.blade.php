@@ -65,8 +65,11 @@
                             </div>
                         </div>
                         <div class="flex text-right justify-end mt-4">
-                            <a class="ml-1 btn btn-primarycol-md-6" href="{{url('/auth/facebook')}}" style="margin-top: 0px !important;background: blue;color: #ffffff;padding: 5px;border-radius:7px;" id="btn-fblogin">
+                            <a class="ml-1 btn btn-primary col-md-4" href="{{url('/auth/facebook')}}" style="margin-top: 0px !important;background: blue;color: #ffffff;padding: 5px;border-radius:7px;" id="btn-fblogin">
                                 <i class="fa fa-facebook-square" aria-hidden="true"></i> Login with Facebook
+                            </a>
+                            <a class="ml-1 btn btn-primary col-md-4" href="{{url('/auth/google')}}" style="margin-top: 0px !important;background: blue;color: #ffffff;padding: 5px;border-radius:7px;" id="btn-fblogin">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i> Login with Gmail
                             </a>
                         </div>
                     </form>

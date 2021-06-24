@@ -20,7 +20,7 @@
                             <div class="card-body">
                                 <div class="author">
                                     <a href="#">
-                                        <img class="avatar border-gray" src="{{ asset('storage/profileImages/' . $user->image) }}" alt="...">
+                                        <img class="avatar border-gray" src="{{ asset('storage/profileImages/' . $user->image) }}" alt="User-image">
                                         <h5 class="title">{{$user->name}}</h5>
                                     </a>
                                     <p class="description"></p>

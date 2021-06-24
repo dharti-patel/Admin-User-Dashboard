@@ -32,6 +32,13 @@ return [
     'facebook' => [    // change is to any provider as your application requires                        
         'client_id' => '490483042183805',
         'client_secret' => '4546191e17c63fa50972bb0b0dff719d',
-        'redirect' => 'http://localhost:8000/auth/facebook/callback',
+        //'redirect' => 'http://localhost:8000/auth/facebook/callback',
+        'redirect' => 'https://dashboard.iconds.in/auth/facebook/callback',
     ],
+    'google' => [    // change is to any provider as your application requires                        
+        'client_id' => '548638148391-ui6uof401a6h2nra2lq5ndcuv30jvdm3.apps.googleusercontent.com',
+        'client_secret' => '04ycEwlsSRmHixQmALxXUYZM',
+       // 'redirect' => 'http://localhost:8000/auth/google/callback',
+        'redirect' => 'https://dashboard.iconds.in/auth/google/callback',
+    ]
 ];

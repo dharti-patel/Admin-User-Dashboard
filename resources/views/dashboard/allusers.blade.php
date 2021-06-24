@@ -44,7 +44,13 @@
                             @endif
                             <tr>
                                 <td>{{$i}}</td>
-                                <td><img src="{{ asset('storage/profileImages/' . $user->image) }}" class="img-thumbnail img-responsive"/></td>
+                                <td>
+                                @if($user->image)
+                                <img src="{{ asset('storage/profileImages/' . $user->image) }}" class="img-thumbnail img-responsive"/>
+                                @else
+                                    No image found
+                                @endif
+                                </td>
                                 <td>{{$user->name}}</td>
                                 <td>{{$user->email}}</td>
                                 <td>{{$status}}</td>
