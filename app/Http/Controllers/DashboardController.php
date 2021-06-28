@@ -64,7 +64,7 @@ class DashboardController extends Controller
                 $user->pincode = $request->input('pincode');
                 $user->status = $request->input('status');
                 if($request->file('image')){
-                    $image = $request->input('image');
+                    $image = $request->file('image');
                     $imageName = md5($image->getClientOriginalName() . time()) . "." . $image->getClientOriginalExtension();
                     $image->move('./storage/profileImages/', $imageName); 
                     $user->image = $imageName;
